@@ -87,7 +87,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,15,26,0.9
 /* SKILLS */
 .skill-grid{display:grid;gap:14px}
 .skill-row{background:var(--bg2);padding:14px 18px;border-left:4px solid var(--pixel);}
-.skill-header{display:grid;grid-template-columns:140px 1fr 50px;align-items:center;gap:12px;margin-bottom:6px;}
+.skill-header{display:grid;grid-template-columns:140px 1fr;align-items:center;gap:12px;margin-bottom:6px;}
 .skill-name{color:#fff;font-size:16px}
 .skill-cat{color:var(--pixel2);font-size:14px}
 .skill-bar-wrap{height:14px;background:var(--bg3);border:1px solid rgba(124,58,237,0.4);overflow:hidden;}
@@ -145,9 +145,9 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
         <div class="hero-class">CLASS: 策略型 AI 应用者</div>
         <div class="hero-value">
           我能帮你做三件事：<br>
-          <span>① 把混乱信息</span> → AI 工作流<br>
-          <span>② 把模糊感觉</span> → 策略方案<br>
-          <span>③ 把一次内容</span> → 复现 SOP
+          <span>① 每天2-3小时的信息整理</span> → 10分钟自动跑完，零人工干预<br>
+          <span>② 用户说不清楚的模糊感觉</span> → 有数据支撑的策略方案<br>
+          <span>③ 写一次就用完的好内容</span> → 可复用、调性稳定的生产SOP
         </div>
         <div class="contact-btns">
           <a href="tel:13228175661" class="contact-btn">📱 电话联系</a>
@@ -169,22 +169,18 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
             <div class="stat-bar-wrap">
               <div class="stat-label">AI工作流</div>
               <div class="stat-bar"><div class="stat-fill" data-w="85" style="background:var(--pixel)"></div></div>
-              <div class="stat-val">85</div>
             </div>
             <div class="stat-bar-wrap">
               <div class="stat-label">品牌策划</div>
               <div class="stat-bar"><div class="stat-fill" data-w="82" style="background:var(--pixel2)"></div></div>
-              <div class="stat-val">82</div>
             </div>
             <div class="stat-bar-wrap">
               <div class="stat-label">内容工程</div>
               <div class="stat-bar"><div class="stat-fill" data-w="88" style="background:var(--pixel3)"></div></div>
-              <div class="stat-val">88</div>
             </div>
             <div class="stat-bar-wrap">
               <div class="stat-label">增长策略</div>
               <div class="stat-bar"><div class="stat-fill" data-w="75" style="background:var(--pixel4)"></div></div>
-              <div class="stat-val">75</div>
             </div>
           </div>
         </div>
@@ -206,11 +202,11 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
         <div class="quest-tags"><span class="tag">田野调查</span><span class="tag">AI内容中台</span><span class="tag">增长策略</span></div>
         <div class="expand-hint">▶ 点击查看详情</div>
         <div class="quest-expand">
-          <div class="quest-detail">驻扎成都玉林路四周，沉浸式田野调查 200+ 自然流量行为轨迹，识别"城市候鸟"人群情感缺口——蓝海需求层。</div>
-          <div class="quest-detail">设计"3-9-30"裂变渗透模型，从零冷启动核心种子用户。</div>
-          <div class="quest-detail">独立搭建 Human-in-the-loop 内容生产中台：人工精筛 TOP 20% 萌芽爆款 → Claude Project 知识库蒸馏 → 标准化内容 SOP。</div>
-          <div class="quest-detail">全程产出《NO.22 核心方法论与架构闭环》白皮书。</div>
-          <div class="quest-result">核心成果：内容生产效率 3-5天/篇 → 0.5天，调性稳定不漂移</div>
+          <div class="quest-result" style="font-weight:bold;margin-bottom:12px;">核心成果：内容生产效率从3-5天/篇压缩至0.5天，将"能不能产出好内容"从概率问题变成流程问题</div>
+          <div class="quest-detail">· 驻扎成都玉林路四周，田野调查200+自然流量行为轨迹，识别"城市候鸟"人群情感缺口</div>
+          <div class="quest-detail">· 设计「3-9-30」裂变渗透模型，从零冷启动核心种子用户，以情感共鸣替代传统投放</div>
+          <div class="quest-detail">· 独立搭建Human-in-the-loop内容中台：人工精筛TOP 20%萌芽爆款 → Claude Project蒸馏风格 → 标准化SOP输出</div>
+          <div class="quest-detail">· 产出《NO.22核心方法论与架构闭环》白皮书，已放入网页可下载</div>
         </div>
       </div>
       <div class="quest-card" onclick="toggleQuest(this)">
@@ -226,19 +222,6 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
           <div class="quest-result">单次运行完成传统人工 2-3 小时的信息整合任务</div>
         </div>
       </div>
-      <div class="quest-card" onclick="toggleQuest(this)">
-        <div class="quest-icon">🎬</div>
-        <div class="quest-name">金坤电子商务</div>
-        <div class="quest-sub">短视频内容运营 · 2025-2026</div>
-        <div class="quest-stars">★★★☆☆</div>
-        <div class="quest-tags"><span class="tag">内容策划</span><span class="tag">即梦AI</span><span class="tag">SOP</span></div>
-        <div class="expand-hint">▶ 点击查看详情</div>
-        <div class="quest-expand">
-          <div class="quest-detail">负责短视频内容策划与逻辑拆解，利用 AI 工具（即梦 AI 等）提升内容生产效率。</div>
-          <div class="quest-detail">优化内容矩阵，建立从脚本策划到剪辑输出的标准化流程。</div>
-          <div class="quest-result">SOP 落地，内容生产标准化</div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -251,7 +234,6 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
         <div class="skill-header">
           <div><div class="skill-name">AI 工作流</div><div class="skill-cat">Workflow</div></div>
           <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="85" style="background:linear-gradient(to right,var(--pixel),var(--pixel2))"></div></div>
-          <div class="skill-pct">85%</div>
         </div>
         <div class="skill-items">扣子/Coze 工作流搭建 · 豆包/DeepSeek 调用 · Dify Pipeline</div>
       </div>
@@ -259,7 +241,6 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
         <div class="skill-header">
           <div><div class="skill-name">AI 内容生产</div><div class="skill-cat" style="color:var(--pixel)">Content</div></div>
           <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="88" style="background:linear-gradient(to right,var(--pixel2),var(--pixel))"></div></div>
-          <div class="skill-pct">88%</div>
         </div>
         <div class="skill-items">Claude Project 知识库蒸馏 · Prompt Engineering · Human-in-the-loop 架构设计</div>
       </div>
@@ -267,7 +248,6 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
         <div class="skill-header">
           <div><div class="skill-name">品牌策划</div><div class="skill-cat" style="color:var(--pixel3)">Strategy</div></div>
           <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="82" style="background:linear-gradient(to right,var(--pixel3),var(--pixel4))"></div></div>
-          <div class="skill-pct">82%</div>
         </div>
         <div class="skill-items">田野调查方法论 · 用户洞察三层萃取 · 竞品重定义 · 核心价值主张设计</div>
       </div>
@@ -275,7 +255,6 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
         <div class="skill-header">
           <div><div class="skill-name">增长策略</div><div class="skill-cat" style="color:var(--pixel4)">Growth</div></div>
           <div class="skill-bar-wrap"><div class="skill-bar-fill" data-w="75" style="background:linear-gradient(to right,var(--pixel4),#22D3EE)"></div></div>
-          <div class="skill-pct">75%</div>
         </div>
         <div class="skill-items">社区冷启动 · UGC 裂变引爆 · 品效合一策略</div>
       </div>
@@ -303,6 +282,7 @@ footer{text-align:center;padding:24px;border-top:2px dashed rgba(124,58,237,0.3)
           <div class="ccard-icon">📧</div>
           <div class="ccard-label">EMAIL</div>
           <div class="ccard-val">yfu40458@gmail.com</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:4px;">有内容或策略需求？直接发消息，当天回复。</div>
         </a>
         <div class="ccard" style="cursor:default">
           <div class="ccard-icon">📍</div>
